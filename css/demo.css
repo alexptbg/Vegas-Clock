@@ -1,0 +1,136 @@
+.vegas-timer {
+    z-index: 500 !important;
+}
+.vegas-timer-progress {
+    background: #ff0066;
+    z-index:99999 !important;
+}
+.vegas-overlay {
+    opacity: .5;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    position: relative;
+    background: #000;
+    color: #fff;
+    font: 1em Arial, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    color: #eee;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    font: 700 14px "PT Sans Narrow";
+    z-index: 100;
+}
+.banner a {
+    color: #F24535;
+}
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-width: 1280px;
+}
+.logo {
+    width: 500px;
+    position: absolute;
+    left: 2.5%;
+    bottom: 8%;
+    transition: 1s all;
+}
+.logo.collapsed {
+    opacity: 0;
+    transform: rotateX(90deg);
+    transform-style: preserve3d;
+}
+.controls {
+    border-left: 1px solid #ff0066;
+    position: absolute;
+    width: 53px;
+    height: auto;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    vertical-align:middle;
+    overflow: hidden !important;
+}
+button {
+    font-size: 16px;
+    width:52px;
+    height:53px;
+    margin-right:0px;
+    background-color:#000000;
+    background: rgba(0,0,0,0.9);
+    color:#ff0066;
+    border: 1px solid #ff0066;
+    border-right:none;
+    font-size:18px;
+}
+button:hover, button:focus, button:active, button:target {
+    background-color:#000000;
+    background: rgba(0,0,0,0.9);
+    color:#ff0066;
+    outline:none;
+}
+button i {
+    vertical-align:middle;
+}
+button:first-child {
+    border-top:none;
+    height: 54px;
+}
+button:last-child {
+    height: 55px;
+    border-bottom:none;
+}
+button.orange {
+    color:orange;
+}
+button.red {
+    color:red;
+}
+p#ctime {
+    background-color:#000000;
+    background: rgba(0,0,0,0.9);
+    overflow:hidden;
+    border-top: 2px solid #ff0066;
+    display: inline-block;
+    position: absolute;
+    bottom:0px;
+	width: 773px;
+    height:162px;
+	font-family: 'Digital-7Mono';
+    color:#ff0066;
+    font-size: 190px;
+    line-height: 120px;
+    text-align: center;
+    vertical-align:middle;
+    margin: 0;
+    margin-left:-26px;
+    margin-right:-27px !important;
+    margin-bottom: 0px !important;
+    padding: 0;
+    padding-top:20px;
+    padding-bottom:0px;
+    text-shadow: 0px 2px 2px rgba(255,0,102,0.9); 
+}
